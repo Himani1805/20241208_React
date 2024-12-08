@@ -8,9 +8,9 @@ const Card = ({ country}) => {
             <h2>{name.common}</h2>
             <p>Population : {population.toLocaleString()}</p>
             <p>Region: {region}</p>
-            <p>Capital: {Capital || 'N/A'}</p>
+            <p>Capital: {capital || 'N/A'}</p>
             <Link to={`/${name.common}`}>
-            <button>More Details</button>
+                <button>More Details</button>
             </Link>
         </div>
     );
